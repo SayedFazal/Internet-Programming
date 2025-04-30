@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Username Form</title>
+  <script>
+    function validateForm(event) {
+      var username = document.getElementById("username").value;
+      if (username.trim() === "") {
+        alert("Username is required!");
+        event.preventDefault(); 
+      }
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="validateForm(event)">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
