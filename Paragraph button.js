@@ -1,3 +1,4 @@
+<!--Create an HTML page with a paragraph and a button. When the user clicks the button, use JavaScript to change the paragraph text to &quot;You clicked the button!&quot;.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
