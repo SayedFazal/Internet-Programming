@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Current Date and Time</title>
+  <script>
+    window.onload = function() {
+      var now = new Date(); 
+      var dateTimeString = now.toString(); 
+      document.getElementById("datetime").innerHTML = dateTimeString; 
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Current Date and Time</h2>
+  <div id="datetime"></div>
+</body>
+</html>
