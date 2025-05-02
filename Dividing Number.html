@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript">
+    function divideNumbers(){
+      try{
+        var num1=10;
+        var num2=5;
+        if (num2===0){
+          throw "Cannot divide by zero!";
+        }
+        var result= num1/num2;
+        alert("Result is: " + result);
+      }
+      catch(error){
+        alert(error);
+      }
+    }
+  </script>
+  <title>Dividing Numbers</title>
+</head>
+<body>
+  <p>Click the following to attempt division:</p>
+  <form>
+    <input type="button" value="Divide Numbers" onclick="divideNumbers();">
+  </form>
+</body>
+</html>
