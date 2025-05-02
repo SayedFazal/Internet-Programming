@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Validation Form</title>
+  <script>
+    function validateEmail(event) {
+      var email = document.getElementById("email").value;
+      var emailPattern = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        event.preventDefault(); 
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Email Validation Form</h2>
+  <form onsubmit="validateEmail(event)">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
