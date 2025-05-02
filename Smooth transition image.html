@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Resize on Click</title>
+  <style>
+    #image {
+      width: 300px;
+      height: 200px;
+      transition: width 0.5s, height 0.5s;  /* Smooth transition for resizing */
+    }
+  </style>
+  <script>
+    function resizeImage() {
+      var img = document.getElementById("image");
+      // Toggle between two sizes
+      if (img.style.width === "600px") {
+        img.style.width = "300px";
+        img.style.height = "200px";
+      } else {
+        img.style.width = "600px";
+        img.style.height = "400px";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Click the image to resize it</h2>
+  <img id="image" src="facebook.svg" alt="Facebook" onclick="resizeImage()">
+</body>
+</html>
