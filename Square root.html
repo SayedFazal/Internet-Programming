@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Root Calculator</title>
+  <script type="text/javascript">
+    function calculateSquareRoot() {
+      var number = document.getElementById("number").value;
+      var result = Math.sqrt(number);
+      document.getElementById("result").innerHTML = "The square root is: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>Square Root Calculator</h2>
+  <p>Enter a number:</p>
+  <input type="number" id="number" />
+  <input type="button" value="Calculate Square Root" onclick="calculateSquareRoot()" />
+  <p id="result"></p> 
+</body>
+</html>
