@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form to JSON</title>
+</head>
+<body>
+    <h2>User Information</h2>
+    <form onsubmit="convertToJSON(); return false;">
+        Name: <input type="text" id="name" required><br><br>
+        Email: <input type="email" id="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>JSON Output:</h3>
+    <pre id="output"></pre>
+    <script>
+        function convertToJSON() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var data = {
+                name: name,
+                email: email
+            };
+            var jsonStr = JSON.stringify(data, null, 4); // Pretty print with indentation
+            document.getElementById("output").textContent = jsonStr;
+        }
+    </script>
+</body>
+</html>
