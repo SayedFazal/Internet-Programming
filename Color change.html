@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+function changeColor() {
+  var e = document.getElementById('hover');
+  e.style.backgroundColor = 'lightcoral';  
+}
+function revertColor() {
+  var e = document.getElementById('hover');
+  e.style.backgroundColor = 'green';
+}
+</script>
+</head>
+<body>
+<div id="hover" 
+     onmouseover="changeColor()" 
+     onmouseout="revertColor()" 
+     style="background-color:green;height:200px;width:200px;">
+</div>
+</body>
+</html>
