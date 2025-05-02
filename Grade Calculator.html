@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grade Calculator</title>
+</head>
+<body>
+  <h2>Enter Marks</h2>
+  <input type="number" id="mark1" placeholder="Subject 1"><br><br>
+  <input type="number" id="mark2" placeholder="Subject 2"><br><br>
+  <input type="number" id="mark3" placeholder="Subject 3"><br><br>
+  <button onclick="calculate()">Calculate</button>
+  <p id="output"></p>
+  <script>
+    function calculate(){
+      var m1=parseFloat(document.getElementById("mark1").value);
+      var m2=parseFloat(document.getElementById("mark2").value);
+      var m3=parseFloat(document.getElementById("mark3").value);
+      var avg=(m1+m2+m3)/3;
+      var grade=avg>=90 ? "A":
+                avg>=75 ? "B":
+                avg>=50 ? "C": "F";
+      var failed=(m1 <50 || m2<50 || m3<50) ? "Failed in at least one subject" : "Passed all siubjects";
+      document.getElementById("output").innerHTML=
+          "Average: " + avg.toFixed(2) + "<br>Grade: " + grade + "<br>" + failed;
+    }
+  </script>
+</body>
+</html>
