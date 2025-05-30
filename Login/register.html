@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .register-box {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="reg_username" placeholder="Username" required />
+      <input type="text" id="reg_password" placeholder="Password" required />
+      <div class="error" id="reg_errorMsg"></div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    const regForm = document.getElementById('registerForm');
+    const regErrorMsg = document.getElementById('reg_errorMsg');
+
+    regForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const username = document.getElementById('reg_username').value;
+      const password = document.getElementById('reg_password').value;
+
+      const response = await fetch('register.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
+      });
+
+      const result = await response.text();
+
+      if (result.trim() === 'success') {
+        alert('Registration successful! Redirecting to login...');
+        window.location.href = 'index.html';
+      } else {
+        regErrorMsg.textContent = result;
+      }
+    });
+  </script>
+</body>
+</html>
