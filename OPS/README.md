@@ -46,7 +46,7 @@ It allows **voters** to cast their votes securely and **admins (groups)** to man
 1. Clone this repository:
 2. Move project files to your local server directory (e.g., 'htdocs' for XAMPP).  
 3. Create a database 'voting' in MySQL.  
-4. Import the provided SQL file ('database.sql') into MySQL.  
+4. Import the provided SQL file ('Database.sql') into MySQL.  
 5. Update database credentials in 'api/connect.php'.  
 6. Start Apache & MySQL from XAMPP and open:
    ```
