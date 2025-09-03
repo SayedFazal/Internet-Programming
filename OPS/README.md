@@ -20,16 +20,16 @@ It allows **voters** to cast their votes securely and **admins (groups)** to man
 ## 📸 Screenshots
 
 ### 🔹 Register Page
-<img width="812" height="470" alt="image" src="https://github.com/user-attachments/assets/b137a69d-d6ba-4055-a6f8-6238a02b1e6d" />
+<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/b137a69d-d6ba-4055-a6f8-6238a02b1e6d" />
 
 ### 🔹 Login Page
-<img width="812" height="469" alt="image" src="https://github.com/user-attachments/assets/4bb07594-cd0e-47f5-8831-84b0878ff04e" />
+<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/4bb07594-cd0e-47f5-8831-84b0878ff04e" />
 
 ### 🔹 Dashboard (Voter View)
-<img width="812" height="469" alt="image" src="https://github.com/user-attachments/assets/5accb62c-6847-4840-9f5d-94f0f805d152" />
+<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/5accb62c-6847-4840-9f5d-94f0f805d152" />
 
 ### 🔹 Dashboard (Admin View with Results)
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/6d378e1c-a31c-4ce0-bc76-b4eeda39d7f7" />
+<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/6d378e1c-a31c-4ce0-bc76-b4eeda39d7f7" />
 
 ---
 
